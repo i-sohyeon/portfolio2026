@@ -17,6 +17,7 @@
     width: 100%;
     padding: rem(24) rem(12);
     background: none;
+    cursor: pointer;
     i {width: rem(20);height: rem(20);}
     &[aria-expanded="true"] {
       font-weight: 700;
