@@ -174,7 +174,7 @@ function Home() {
                 des="(2023.09 ~ )" />
               <UIBanner.List
                 icon="company"
-                number="2025"
+                number="2026"
                 variant="list"
                 bgColor="type6"
                 title="??????"
