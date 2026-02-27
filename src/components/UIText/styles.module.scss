@@ -11,12 +11,12 @@
   &-tenada {font-family: "Tenada";}
   &-bagel {font-family: "Bagel fat one";}
 
-
   /* Variants */
   &-mainTitle {
     font-family: "Tenada"; 
     font-size: rem(80) !important;
   }
+  
   &-contentTitle {
     display: inline-block;
     font-family: "Tenada";
@@ -133,6 +133,21 @@
       font-size: rem(36) !important;
       margin: 0 0 48px 0;
     }
+    &-header {
+      &-sm {font-size: rem(24);}
+      &-md {
+        font-size: rem(28);
+        margin-bottom: rem(20);
+        &+.ui-text-header-md:first-child{margin-bottom: 0;}
+      }
+      &-lg {
+        font-size: rem(32);
+      }
+      &-xl {
+        font-size: rem(44);
+      }
+    }
+    
     /* Sizes */
     &-xxs {font-size: rem(11);}
     &-xs {font-size: rem(14);}
@@ -142,19 +157,6 @@
     &-xl {font-size: rem(28);}
     &-xxl {font-size: rem(32);}
   }
-  .ui-text-header {
-    &-xl {
-      font-size: rem(44);
-    }
-    &-lg {
-      font-size: rem(32);
-    }
-    &-md {
-      font-size: rem(28);
-      margin-bottom: rem(20);
-      &+.ui-text-header-md:first-child{margin-bottom: 0;}
-    }
-    &-sm {font-size: rem(24);}
-  }
+
 }
 

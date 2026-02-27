@@ -1,60 +1,62 @@
 @import "../../styles/utils/function";
 
-.ui-box-article {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0px auto;
-  padding: rem(120) 0;
+.ui-box {
+  &-article{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0px auto;
+    padding: rem(120) 0;
+  }
+
+  // align
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center !important;
+  }
+  &-right {
+    text-align: right;
+  }
+
+  // jContent
+  &-space-between {
+    justify-content: space-between;
+  }
+
+  // aItems
+  &-top {
+    align-items: start;
+  }
+  &-middle {
+    align-items: center;
+  }
+  &-bottom {
+    align-items: end;
+  }
+
+  // variant
+  &-card {
+    height: fit-content;
+    background: #FFF302;
+    border-radius: rem(24);
+    display: inline-block; 
+    width: 100%;
+    max-width: 550px;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    text-align:left;
+  }
+  // display
+  &-flex {display: flex;}
+  &-grid {display: grid;}
 }
 
 // .ui-box-div {
 //   & > div {background: red;}
 // }
 
-// align
-.ui-box-left {
-  text-align: left;
-}
-.ui-box-center {
-  text-align: center !important;
-}
-.ui-box-right {
-  text-align: right;
-}
 
-
-// jContent
-.ui-box-space-between {
-  justify-content: space-between;
-}
-
-// aItems
-.ui-box-top {
-  align-items: start;
-}
-.ui-box-middle {
-  align-items: center;
-}
-.ui-box-bottom {
-  align-items: end;
-}
-
-// variant
-.ui-box-card {
-  height: fit-content;
-  background: #FFF302;
-  border-radius: rem(24);
-  display: inline-block; 
-  width: 100%;
-  max-width: 550px;
-  padding: 60px 40px;
-  box-sizing: border-box;
-  text-align:left;
-}
-
-// display
-.ui-box-flex {display: flex;}
-.ui-box-grid {display: grid;}
 
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);
@@ -87,18 +89,21 @@
 
 // display
 @media (min-width: 320px) and (max-width: 767px) {
-  .ui-box-article {
-    padding: rem(100) 0;
+  .ui-box {
+    &-article {
+      padding: rem(100) 0;
+    }
+    &-div {
+    }
+    &-flex, &-grid {
+      display: block;
+    }
+    &-card {
+      display: block;
+      margin: 0 auto;
+    }
   }
-  .ui-box-div {
-  }
-  .ui-box-flex, .ui-box-grid {
-    display: block;
-  }
-  .ui-box-card {
-    display: block;
-    margin: 0 auto;
-  }
+
   .previewBox {
     margin-top: rem(32);
   }

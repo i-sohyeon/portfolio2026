@@ -62,7 +62,7 @@ export const UIFooter: React.FC<UIFooterProps> = ({
       </div>
       <UIDivider variant="type1" margin="24px 0"/>
       <div className={styles.copyText}>
-        <p>&copy; 2025 i-sohyeon. All Rights Reserved.</p>
+        <p>&copy; 2026 i-sohyeon. All Rights Reserved.</p>
         <p>Designed & Built with React, Typescripts.</p>
       </div>
     </UIFooter>

@@ -1,11 +1,13 @@
 @import "../../styles/style.scss";
 
-.ui-acc-line {
-  button {
-    font-size: rem(20);
-    font-weight: 400;
-    color: #111111;
-    text-align: left;
+.ui-acc {
+  &-line {
+    button {
+      font-size: rem(20);
+      font-weight: 400;
+      color: #111111;
+      text-align: left;
+    }
   }
 }
 
@@ -17,14 +19,13 @@
     width: 100%;
     padding: rem(24) rem(12);
     background: none;
-    cursor: pointer;
     i {width: rem(20);height: rem(20);}
     &[aria-expanded="true"] {
       font-weight: 700;
       i {transform: rotate(180deg);}
     }
 
-    &[aria-expanded="true"] + .accordion-panel {
+    &[aria-expanded="true"] + &-panel {
       max-height: 300px;     // 펼쳐질 최대 높이
       opacity: 1;
       padding: 16px 0;
@@ -38,9 +39,8 @@
     // text-align: center;
     img {width: 80%;}
   }
-}
 
-.accordion-panel {
+  &-panel {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -49,7 +49,9 @@
     max-height 0.3s ease,
     opacity 0.3s ease,
     padding 0.3s ease;
+  }
 }
+
 
 
 @media (max-width: 768px) {
