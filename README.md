@@ -20,10 +20,10 @@ React + TypeScript 기반으로 제작하여 웹 표준, 접근성, 성능 최�
 
 ## 🛠️ 기술 스택
 - **Framework**: React [Create React App](https://create-react-app.dev/)
-- **Language**: TypeScript, SCSS
-- **Styling**: CSS Modules, SCSS
+- **Language**: TypeScript
+- **Styling**: SCSS, CSS Modules, Utility-based styling architecture
 - **Build & Deploy**: GitHub Actions
-- **Accessibility**: 시맨틱 마크업, aria-속성 적용, 명도 대비 준수
+- **Accessibility**: Semantic HTML, ARIA attributes 적용, WCAG 명도 대비 기준 준수
 - **Performance**: 코드 스플리팅, 이미지 최적화(Lazy Loading, WebP 변환)
 
 
