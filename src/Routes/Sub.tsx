@@ -21,9 +21,9 @@ function Sub() {
         { id: 1-1, name: "- 현대카드 자체 CMS 활용하여 콘텐츠 수정" },
         { id: 1-2, name: "- 매달 발송 되는 이벤트 랜딩 페이지 작업 (코스트코, 이마트, 대한항공 등의 이벤트 페이지)" },
         { id: 1-3, name: "- QA 과정에서 발생한 이슈 대응" },
-        { id: 1-4, name: "- EM(outlook mail) 발송 시 전반적인 마크업 담당" },
+        { id: 1-4, name: "- EM(outlook mail) 발송 시 전반적인 마크업 담당, 다크모드 적용" },
         { id: 1-5, name: "- 기기별로 반응형 레이아웃을 적용하여 최적화된 인터페이스를 구현" },
-        { id: 1-6, name: "- HTML 마크업 및 CSS 스타일링, javascript 작업" },
+        // { id: 1-6, name: "- HTML 마크업 및 CSS 스타일링, javascript 작업" },
         { id: 1-7, name: "- 기획/디자인 변경에 따른 jsp 마크업 수정" },
         { id: 1-8, name: "- 보이는 ARS 페이지 개발 대응 및 유지 보수" },
       ],
@@ -194,13 +194,16 @@ function Sub() {
               />
               <div className="mt-2">
                 <UIBadge variant="solid" bgColor="navy" size="sm">
-                  React
+                  CMS
                 </UIBadge>
                 <UIBadge variant="solid" bgColor="navy" size="sm">
                   크로스브라우징
                 </UIBadge>
                 <UIBadge variant="solid" bgColor="navy" size="sm">
                   접근성
+                </UIBadge>
+                <UIBadge variant="solid" bgColor="navy" size="sm">
+                  다크모드
                 </UIBadge>
               </div>
             </UIBox.Div>
